@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Calculator</title>
+</head>
+<body>
+
+    <div class="calculator-container">
+        <div class="calculator-display">
+            <input type="text" class="calculator-display-input">
+        </div>
+        <div class="calculator-pad">
+            <div class="row">
+                <div class="col-md-4 w-100">
+                    <button onclick="sendValue('clear')" class="btn btn-danger w-100 fw-bold">
+                        C
+                    </button>
+                </div>
+                <div class="col-md-4 w-50">
+                    <button onclick="sendValue('/')" class="btn btn-dark w-100 fw-bold">
+                        /
+                    </button>
+                </div>
+                <div class="col-md-4 w-50">
+                    <button onclick="sendValue('*')" class="btn btn-dark w-100 fw-bold">
+                        X
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 w-100">
+                    <button onclick="sendValue(7)" class="btn btn-dark w-100">
+                        7
+                    </button>
+                </div>
+                <div class="col-md-4 w-100">
+                    <button onclick="sendValue(8)" class="btn btn-dark w-100">
+                        8
+                    </button>
+                </div>
+                <div class="col-md-4 w-100">
+                    <button onclick="sendValue(9)" class="btn btn-dark w-100">
+                        9
+                    </button>
+                </div>
+                <div class="col-md-4 w-100">
+                    <button onclick="sendValue('-')" class="btn btn-dark w-100">
+                        -
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="w-100">
+                    <div class="row w-100">
+                        <div class="col-md-4 w-100">
+                            <button onclick="sendValue(4)" class="btn btn-dark w-100">
+                                4
+                            </button>
+                        </div>
+                        <div class="col-md-4 w-100">
+                            <button onclick="sendValue(5)" class="btn btn-dark w-100">
+                                5
+                            </button>
+                        </div>
+                        <div class="col-md-4 w-100">
+                            <button onclick="sendValue(6)" class="btn btn-dark w-100">
+                                6
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row w-100">
+                        <div class="col-md-4 w-100">
+                            <button onclick="sendValue(3)" class="btn btn-dark w-100">
+                                3
+                            </button>
+                        </div>
+                        <div class="col-md-4 w-100">
+                            <button onclick="sendValue(2)" class="btn btn-dark w-100">
+                                2
+                            </button>
+                        </div>
+                        <div class="col-md-4 w-100">
+                            <button onclick="sendValue(1)" class="btn btn-dark w-100">
+                                1
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 33%;">
+                    <div class="col-md-4 w-100" style="height: 100%;">
+                        <button onclick="sendValue('+')" class="btn btn-dark w-100 " style="height: 100%;">
+                            +
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 w-100">
+                    <button onclick="sendValue(0)" class="btn btn-dark w-100">
+                        0
+                    </button>
+                </div>
+                <div class="col-md-4 w-100">
+                    <button onclick="sendValue(00)" class="btn btn-dark w-100">
+                        00
+                    </button>
+                </div>
+                <div class="col-md-4 w-100">
+                    <button onclick="sendValue('.')" class="btn btn-dark w-100">
+                        .
+                    </button>
+                </div>
+                <div class="col-md-4 w-100">
+                    <button onclick="sendValue('=')" class="btn btn-blue w-100">
+                        =
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

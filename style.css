@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  background: #363636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  border: 2px solid black;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 80px 0px;
+    height: auto;
+  }
+}
+
+.calculator-container {
+  width: 350px;
+  height: auto;
+  padding: 25px;
+  -webkit-box-shadow: 0px 0px 14px #0000002f;
+          box-shadow: 0px 0px 14px #0000002f;
+  background: #0c2835;
+  color: #eeeeee;
+  border-radius: 10px;
+}
+
+.calculator-container .calculator-display {
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 30px;
+}
+
+.calculator-container .calculator-display .calculator-display-input {
+  width: 100%;
+  font-size: 28px;
+  color: #eeeeee;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: end;
+  padding: 10px 5px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.fw-bold {
+  font-weight: bolder !important;
+}
+
+.btn {
+  padding: 20px 5px;
+  font-size: 18px;
+}
+
+.btn.btn-danger {
+  background: #ff3077;
+  color: #eeeeee;
+}
+
+.btn.btn-dark {
+  background: #363636;
+  color: #eeeeee;
+}
+
+.btn.btn-blue {
+  background: #03b1ff;
+  color: #eeeeee;
+}
